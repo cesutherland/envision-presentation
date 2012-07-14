@@ -77,4 +77,9 @@ $(function () {
     demos.weierstrass($(this).find('.graph'), true);
   });
 
+  // Fractal
+  $('#fractal').one('impress:stepenter', function () {
+    demos.fractal($(this).find('.graph'), true);
+  });
+
 });

@@ -91,11 +91,9 @@ envisionPresentation.weierstrass = function (container, generator) {
       jMax = step * (i + 1),
       k, x, y, t;
 
-    //console.time('data generation');
-    weierstrassStep(i, jMax);
-
     function weierstrassStep (i, jMax) {
       progress.text(i);
+      console.log(i);
       for (j = step * i; j < jMax; j++) {
         x = -1 + j * 2 / count;
         y = 0;
@@ -116,6 +114,9 @@ envisionPresentation.weierstrass = function (container, generator) {
         setTimeout(_.bind(weierstrassStep, null, i, jMax), 2);
       }
     }
+
+    //console.time('data generation');
+    weierstrassStep(i, jMax);
 
     // womp womp womp
     function letsWomp () {

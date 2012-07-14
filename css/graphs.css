@@ -36,3 +36,9 @@
 .weierstrass .envision-timeseries-summary .envision-component {
   height: 200px;
 }
+
+#fractal .envision-component {
+  height: 420px;
+  width: 560px;
+  margin: 0px auto;
+}
