@@ -1,0 +1,13 @@
+.graph {
+  width: 640px;
+  height: 480px;
+  margin: 0px auto;
+}
+.envision-finance {
+  width: auto;
+}
+
+.envision-finance-price .flotr-mouse-value {
+  font-size: 18px;
+}
+
