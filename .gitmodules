@@ -1,0 +1,6 @@
+[submodule "lib/impress.js"]
+	path = lib/impress.js
+	url = git://github.com/bartaz/impress.js.git
+[submodule "lib/envision"]
+	path = lib/envision
+	url = git@github.com:HumbleSoftware/envisionjs.git
