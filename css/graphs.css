@@ -1,13 +1,38 @@
 .graph {
-  width: 640px;
-  height: 480px;
+  width: 740px;
   margin: 0px auto;
+  font-size: 24px;
 }
+
 .envision-finance {
   width: auto;
 }
-
 .envision-finance-price .flotr-mouse-value {
   font-size: 18px;
 }
+#finance .envision-finance-price .envision-component {
+  height: 280px;
+}
 
+.million pre {
+  text-align: center;
+  display: none;
+  margin-top: 72px;
+}
+.million .envision-timeseries-connector,
+.million .envision-timeseries-summary {
+  background: #fff;
+
+}
+.million .envision-timeseries-detail {
+  padding-top: 26px;
+  padding-bottom: 18px;
+}
+.million .envision-timeseries-detail .envision-component {
+  height: 104px;
+}
+.million .envision-timeseries-summary {
+}
+.weierstrass .envision-timeseries-summary .envision-component {
+  height: 200px;
+}

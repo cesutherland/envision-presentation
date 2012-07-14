@@ -63,7 +63,7 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="envision" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="envision" class="step slide" data-x="0" data-y="0">
       <h1>Envision.js</h1>
       <p>An API for creating visualizations that are:</p>
       <ul>
@@ -74,65 +74,43 @@
       <div class="graph"></div>
     </div>
 
-    <div id="envision-1" class="step" data-x="-1000" data-y="-1500" data-transition-duration="0"></div>
-    <div id="envision-2" class="step" data-x="-1000" data-y="-1500" data-transition-duration="0"></div>
-    <div id="envision-3" class="step" data-x="-1000" data-y="-1500" data-transition-duration="0"></div>
+    <div id="envision-1" class="step" data-x="0" data-y="0" data-transition-duration="0"></div>
+    <div id="envision-2" class="step" data-x="0" data-y="0" data-transition-duration="0"></div>
+    <div id="envision-3" class="step" data-x="0" data-y="0" data-transition-duration="0"></div>
 
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div id="step2" class="step slide" data-x="0" data-y="-1500">
+    <div id="finance" class="step slide" data-x="1000" data-y="0">
       <h1>Finance</h1>
       <div class="graph"></div>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    <div id="million" class="step slide million" data-x="2000" data-y="0">
+      <h1>Million Points</h1>
+      <div class="graph"></div>
+      <pre>Math.sin(i * period) + amplitude * Math.sin(i * period * 1000)</pre>
     </div>
 
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to it's correct size.
-        
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    <div id="crazy" class="step slide million" data-x="3000" data-y="0">
+      <h1>WTF?</h1>
+      <div class="graph"></div>
+      <pre>Math.sin(i * period) + <b>100</b> * amplitude * Math.sin(i * period * 1000)</pre>
     </div>
 
-        
-        So to make a summary of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="minmax" class="step slide million" data-x="4000" data-y="0">
+      <h1>Better Sampling</h1>
+      <div class="graph"></div>
     </div>
-    -->
+
+    <div id="weierstrass" class="step slide weierstrass" data-x="5000" data-y="0">
+      <h1>Weierstrass Demo</h1>
+      <div class="data-generation">Data Generation: <span class="progress"></span>%</div>
+      <div class="graph"></div>
+    </div>
+
+    <div id="generator" class="step slide weierstrass" data-x="6000" data-y="0">
+      <h1>Generator Function</h1>
+      <div class="data-generation">Data Generation: <span class="progress"></span>%</div>
+      <div class="graph"></div>
+    </div>
 
 </div>
 
@@ -168,25 +146,13 @@ if ("ontouchstart" in document.documentElement) {
 }
 </script>
 
-<!--
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
-
 <script src="lib/envision/demos/data/data.js"></script>
 <script src="lib/envision/envision.js"></script>
 <script src="lib/jquery.min.js"></script>
 <script src="js/presentation.js"></script>
+<script src="demos/finance.js"></script>
+<script src="demos/million.js"></script>
+<script src="demos/weierstrass.js"></script>
 <script src="lib/impress.js/js/impress.js"></script>
 <script>impress().init();</script>
 

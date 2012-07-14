@@ -40,8 +40,18 @@ body {
 }
 
 h1 {
+  margin-bottom: 48px;
   text-align: center;
   font-size: 48px;
+}
+p {
+  margin: 48px 0px;
+}
+pre {
+  font-size: 20px;
+}
+
+pre b {
 }
 
 #envision ul {
@@ -55,9 +65,14 @@ h1 {
   display: none;
   position: absolute;
   right: 80px;
-  top: 220px;
+  top: 240px;
   width: 480px;
 }
 #envision .flotr-labels {
   display: none;
+}
+
+.data-generation {
+  font-size: 28px;
+  margin-left: 29px;
 }
