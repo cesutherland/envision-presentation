@@ -4,3 +4,6 @@
 [submodule "lib/envision"]
 	path = lib/envision
 	url = git@github.com:HumbleSoftware/envisionjs.git
+[submodule "lib/jquery"]
+	path = lib/jquery
+	url = git://github.com/jquery/jquery.git
