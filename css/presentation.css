@@ -76,3 +76,20 @@ pre b {
   font-size: 28px;
   margin-left: 29px;
 }
+
+#finance .graph {
+  margin-bottom: 62px;
+}
+#finance .about {
+  text-align: center;
+}
+#finance .about span {
+  padding: 0px 12px;
+}
+
+#api .graph {
+  position: absolute;
+  right: 80px;
+  top: 168px;
+  width: 440px;
+}

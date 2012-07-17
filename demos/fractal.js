@@ -112,6 +112,5 @@ envisionPresentation.fractal = function (container) {
     .group([fractal])
     .add(envision.actions.zoom, zoomConfig);
 
-  console.log('here');
   return vis;
 };

@@ -52,6 +52,11 @@ $(function () {
     demos.finance($(this).find('.graph'));
   });
 
+  $('#api').one('impress:stepenter', function () {
+    console.log('here');
+    demos.api($(this).find('.graph'));
+  });
+
   // Million
   $('#million').one('impress:stepenter', function () {
     demos.million($(this).find('.graph'));

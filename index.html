@@ -81,38 +81,71 @@
     <div id="finance" class="step slide" data-x="1000" data-y="0">
       <h1>Finance</h1>
       <div class="graph"></div>
+      <div class="about">
+        <span>Modern Browsers</span>
+        &#8226; 
+        <span>IE 6+ (FlashCanvas)</span>
+        &#8226;
+        <span>Touch</span>
+        &#8226;
+        <span>Flotr2</span>
+      </div>
     </div>
 
-    <div id="million" class="step slide million" data-x="2000" data-y="0">
+    <div id="api" class="step slide" data-x="2000" data-y="0">
+      <h1>API</h1>
+      <ul>
+        <li>Visualization</li>
+        <li>
+          Component
+          <ul>
+            <li>Adapters (Flotr2)</li>
+            <li>Custom</li>
+          </ul>
+        </li>
+        <li>Interaction</li>
+        <li>Preprocessor</li>
+        <li>
+          Templates
+          <ul>
+            <li>TimeSeries</li>
+            <li>Finance</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="graph"></div>
+    </div>
+
+    <div id="million" class="step slide million" data-x="3000" data-y="0">
       <h1>Million Points</h1>
       <div class="graph"></div>
       <pre>Math.sin(i * period) + amplitude * Math.sin(i * period * 1000)</pre>
     </div>
 
-    <div id="crazy" class="step slide million" data-x="3000" data-y="0">
+    <div id="crazy" class="step slide million" data-x="4000" data-y="0">
       <h1>WTF?</h1>
       <div class="graph"></div>
       <pre>Math.sin(i * period) + <b>100</b> * amplitude * Math.sin(i * period * 1000)</pre>
     </div>
 
-    <div id="minmax" class="step slide million" data-x="4000" data-y="0">
+    <div id="minmax" class="step slide million" data-x="5000" data-y="0">
       <h1>Better Sampling</h1>
       <div class="graph"></div>
     </div>
 
-    <div id="weierstrass" class="step slide weierstrass" data-x="5000" data-y="0">
+    <div id="weierstrass" class="step slide weierstrass" data-x="6000" data-y="0">
       <h1>Weierstrass Demo</h1>
       <div class="data-generation">Data Generation: <span class="progress"></span>%</div>
       <div class="graph"></div>
     </div>
 
-    <div id="generator" class="step slide weierstrass" data-x="6000" data-y="0">
+    <div id="generator" class="step slide weierstrass" data-x="7000" data-y="0">
       <h1>Generator Function</h1>
       <div class="data-generation">Data Generation: <span class="progress"></span>%</div>
       <div class="graph"></div>
     </div>
 
-    <div id="fractal" class="step slide weierstrass" data-x="7000" data-y="0">
+    <div id="fractal" class="step slide weierstrass" data-x="8000" data-y="0">
       <h1>Fractal</h1>
       <div class="graph"></div>
     </div>
@@ -159,6 +192,7 @@ if ("ontouchstart" in document.documentElement) {
 <script src="demos/million.js"></script>
 <script src="demos/weierstrass.js"></script>
 <script src="demos/fractal.js"></script>
+<script src="demos/api.js"></script>
 <script src="lib/impress.js/js/impress.js"></script>
 <script>impress().init();</script>
 
